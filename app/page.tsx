@@ -106,7 +106,7 @@ export default function Portfolio() {
       description:
         "ML model predicting target cricket scores using match context, regression models, and comprehensive team performance statistics.",
       impact: "Match prediction • Statistical analysis • Sports analytics",
-      techStack: ["Python", "Pandas", "Scikit-learn", "Linear Regression"],
+      techStack: ["Python", "Pandas", "XGBoost"],
       github: "https://github.com/vky6366/Cricket-Score-Predictor",
     },
     {
@@ -114,7 +114,7 @@ export default function Portfolio() {
       description:
         "NLP system classifying duplicate questions using semantic and syntactic similarity models with advanced text processing techniques.",
       impact: "Semantic similarity • Duplicate detection • NLP processing",
-      techStack: ["Python", "TF-IDF", "XGBoost", "Siamese LSTM"],
+      techStack: ["Python", "Word2Vec", "Neural Networks"],
       github: "https://github.com/vky6366/Quora-Question-Pairs",
     },
     {
