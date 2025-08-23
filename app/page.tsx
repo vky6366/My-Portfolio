@@ -28,7 +28,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "projects", "other-projects", "research", "achievements", "skills", "contact"]
+      const sections = ["home", "projects", "other-projects", "research", "achievements", "skills", "resume", "contact"]
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -95,7 +95,7 @@ export default function Portfolio() {
       description:
         "Behavioral interview simulator using LLMs to evaluate and score candidate responses. Provides detailed feedback and improvement suggestions.",
       impact: "LLM evaluation • Automated scoring • Interview preparation",
-      techStack: ["LangChain", "Gradio", "Transformers", "NLP", "Scoring","Firebase", "FastAPI","Kotlin"],
+      techStack: ["LangChain", "Gradio", "Transformers", "NLP", "Scoring", "Firebase", "FastAPI", "Kotlin"],
       github: "https://github.com/vky6366/Interview-Simulator",
     },
   ]
@@ -195,6 +195,7 @@ export default function Portfolio() {
     { id: "research", label: "Research" },
     { id: "achievements", label: "Achievements" },
     { id: "skills", label: "Skills" },
+    { id: "resume", label: "Resume" },
     { id: "contact", label: "Contact" },
   ]
 
@@ -548,6 +549,108 @@ export default function Portfolio() {
                 </div>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Resume Section */}
+      <section id="resume" className="py-20 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-blue-400 font-medium text-lg mb-4 tracking-wide">Professional Profile</p>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
+              <span className="text-blue-400">Resume</span> & CV
+            </h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+              Comprehensive overview of my professional experience, education, and technical expertise
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-slate-900/50 border-slate-800/50 hover:border-blue-500/30 transition-all duration-500">
+              <CardContent className="p-8">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+                  <div className="flex-1 text-center lg:text-left">
+                    <h3 className="text-2xl font-semibold text-slate-100 mb-4">Download My Resume</h3>
+                    <p className="text-slate-300 mb-6 leading-relaxed">
+                      Get a detailed overview of my academic background, technical skills, project experience, and
+                      professional achievements. Updated with my latest work in AI/ML and software development.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                      <Button
+                        asChild
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-medium rounded-xl shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 transition-all duration-300"
+                      >
+                        <a
+                          href="https://drive.google.com/file/d/1iU2myEx4-tfcqH-PVmckFaoMBLghq21n/view?usp=sharing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <svg className="mr-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                            />
+                          </svg>
+                          View Resume
+                        </a>
+                      </Button>
+                      <Button
+                        variant="outline"
+                        asChild
+                        className="border-slate-700 text-slate-300 hover:bg-slate-800 hover:border-slate-600 px-8 py-3 text-lg font-medium rounded-xl transition-all duration-300 bg-transparent"
+                      >
+                        <a
+                          href="https://drive.google.com/drive/folders/1XWJAmcFFzS_emC4XhTJ6GeMSNwskabmI"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <svg className="mr-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                            />
+                          </svg>
+                          Download PDF
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+
+                  <div className="lg:w-1/3">
+                    <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50">
+                      <h4 className="text-slate-100 font-semibold mb-4 text-center">Quick Overview</h4>
+                      <div className="space-y-3 text-sm">
+                        <div className="flex justify-between">
+                          <span className="text-slate-400">Education:</span>
+                          <span className="text-slate-200">CSE Undergrad</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-slate-400">Experience:</span>
+                          <span className="text-slate-200">AI/ML Projects</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-slate-400">Specialization:</span>
+                          <span className="text-slate-200">Deep Learning</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-slate-400">Research:</span>
+                          <span className="text-slate-200">Published Work</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-slate-400">Awards:</span>
+                          <span className="text-slate-200">Multiple Wins</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
