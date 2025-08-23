@@ -279,7 +279,7 @@ export default function Portfolio() {
                 </h1>
               </div>
               <p className="text-xl sm:text-2xl text-slate-300 mb-8 font-light leading-relaxed">
-                Machine Learning & Deep Learning Explorer | LLM & RAG Builder | Python Developer | Pre-Final Year CSE
+                Machine Learning & Deep Learning Explorer | LLM & RAG Builder | Python Developer | Final Year CSE
                 Undergrad
               </p>
               <p className="text-lg text-slate-400 mb-10 max-w-2xl leading-relaxed">
