@@ -602,7 +602,7 @@ export default function Portfolio() {
                       className="border-slate-700 text-slate-300 hover:bg-slate-800 hover:border-slate-600 px-8 py-3 text-lg font-medium rounded-xl transition-all duration-300 bg-transparent"
                     >
                       <a
-                        href="https://drive.google.com/file/d/1iU2myEx4-tfcqH-PVmckFaoMBLghq21n/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1cE1RoXhqY4xBY0KauJ8vKMlx7nIM_mKW/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
