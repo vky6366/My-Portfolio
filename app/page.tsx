@@ -67,6 +67,14 @@ export default function Portfolio() {
       github: "https://github.com/vky6366/DeepFake-Detection",
     },
     {
+      title: "AI Code Generating Agent",
+      description:
+        "AI-Code-Generating-Agent is an intelligent tool that leverages OpenAI API to generate code based on user promp",
+      impact: "Generate code using OpenAI's powerful models • Interactive Python interface• Simple setup and usage",
+      techStack: ["Python", "Langchain", "LangGraph", "Pydantic", "OpenAI  API", "GPT 4o-mini"],
+      github: "https://github.com/vky6366/AI-Code-Generating-Agent",
+    },
+    {
       title: "YouTube Q&A RAG Assistant",
       description:
         "LangChain-powered RAG system enabling natural language queries on YouTube videos using extracted transcripts. Intelligent video content analysis with semantic search capabilities.",
@@ -91,7 +99,7 @@ export default function Portfolio() {
       github: "https://github.com/vky6366/OnDevice_Image-Classification",
     },
     {
-      title: "AI Interview Simulator",
+      title: "AI Interview Simulator (In-Process)",
       description:
         "Behavioral interview simulator using LLMs to evaluate and score candidate responses. Provides detailed feedback and improvement suggestions.",
       impact: "LLM evaluation • Automated scoring • Interview preparation",
