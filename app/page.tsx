@@ -203,6 +203,7 @@ export default function Portfolio() {
     { name: "TensorFlow", icon: Brain },
     { name: "Scikit-Learn", icon: Brain },
     { name: "LangChain", icon: Brain },
+    { name: "LangGraph", icon: Brain },
     { name: "TFLite", icon: Smartphone },
     { name: "OpenCV", icon: Code },
     { name: "FastAPI", icon: Server },
