@@ -75,12 +75,28 @@ export default function Portfolio() {
       github: "https://github.com/vky6366/AI-Code-Generating-Agent",
     },
     {
+      title: "AI Powered Medical Appointment Scheduling Agent",
+      description:
+        "An intelligent, AI-powered agent designed to automate and optimize the scheduling of medical appointments. This project aims to streamline patient-doctor interactions, reduce manual administrative work, and improve the overall efficiency of medical appointment management.",
+      impact: "AI-Powered Scheduling • Natural Language Processing• Calendar Integration",
+      techStack: ["Python", "Langchain", "LangGraph", "Pydantic", "OpenAI  API", "GPT 4o-mini"],
+      github: "https://github.com/vky6366/AI-Powered-Medical-Appointment-Scheduling-Agent",
+    },
+    {
       title: "YouTube Q&A RAG Assistant",
       description:
         "LangChain-powered RAG system enabling natural language queries on YouTube videos using extracted transcripts. Intelligent video content analysis with semantic search capabilities.",
       impact: "Real-time Q&A • Semantic search • Video transcript analysis",
       techStack: ["LangChain", "OpenAI GPT", "FAISS", "Streamlit", "YouTube API"],
       github: "https://github.com/vky6366/YT-Insight",
+    },
+    {
+      title: "Tooth Detection & Numbering with YOLOv8",
+      description:
+        "This project demonstrates how to train a YOLOv8 object detection model to detect and number teeth in panoramic dental X-rays using the FDI Tooth Numbering System.",
+      impact: "Precision: 0.905 • Recall: 0.921 • mAP@50: 0.941",
+      techStack: ["Python", "YOLOv8", "TorchVision", "torch"],
+      github: "https://github.com/vky6366/dental-teeth-fdi-yolo",
     },
     {
       title: "Phishing Domain Detector",
