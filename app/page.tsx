@@ -17,6 +17,9 @@ import {
   TrendingUp,
   Users,
   Zap,
+  Briefcase,
+  MapPin,
+  Calendar,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -28,7 +31,17 @@ export default function Portfolio() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "projects", "other-projects", "research", "achievements", "skills", "resume", "contact"]
+      const sections = [
+        "home",
+        "projects",
+        "other-projects",
+        "research",
+        "achievements",
+        "experience",
+        "skills",
+        "resume",
+        "contact",
+      ]
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -69,17 +82,17 @@ export default function Portfolio() {
     {
       title: "AI Code Generating Agent",
       description:
-        "AI-Code-Generating-Agent is an intelligent tool that leverages OpenAI API to generate code based on user promp",
-      impact: "Generate code using OpenAI's powerful models • Interactive Python interface• Simple setup and usage",
-      techStack: ["Python", "Langchain", "LangGraph", "Pydantic", "OpenAI  API", "GPT 4o-mini"],
+        "AI-Code-Generating-Agent is an intelligent tool that leverages OpenAI API to generate code based on user prompt.",
+      impact: "Generate code using OpenAI's powerful models • Interactive Python interface • Simple setup and usage",
+      techStack: ["Python", "Langchain", "LangGraph", "Pydantic", "OpenAI API", "GPT 4o-mini"],
       github: "https://github.com/vky6366/AI-Code-Generating-Agent",
     },
     {
       title: "AI Powered Medical Appointment Scheduling Agent",
       description:
         "An intelligent, AI-powered agent designed to automate and optimize the scheduling of medical appointments. This project aims to streamline patient-doctor interactions, reduce manual administrative work, and improve the overall efficiency of medical appointment management.",
-      impact: "AI-Powered Scheduling • Natural Language Processing• Calendar Integration",
-      techStack: ["Python", "Langchain", "LangGraph", "Pydantic", "OpenAI  API", "GPT 4o-mini"],
+      impact: "AI-Powered Scheduling • Natural Language Processing • Calendar Integration",
+      techStack: ["Python", "Langchain", "LangGraph", "Pydantic", "OpenAI API", "GPT 4o-mini"],
       github: "https://github.com/vky6366/AI-Powered-Medical-Appointment-Scheduling-Agent",
     },
     {
@@ -153,7 +166,7 @@ export default function Portfolio() {
     {
       title: "Intelligent Transportation System",
       description:
-        "Built a multilingual web platform for my Head of Department to promote road safety and smart transportation awareness. The website supported real-time translation in 14 languages, enabling inclusive access to international audiences.Presented at the IEEE Fellowship for the Intelligent Transportation Systems (ITS) WIE/YP Research Forum in Paris.",
+        "Built a multilingual web platform for my Head of Department to promote road safety and smart transportation awareness. The website supported real-time translation in 14 languages, enabling inclusive access to international audiences. Presented at the IEEE Fellowship for the Intelligent Transportation Systems (ITS) WIE/YP Research Forum in Paris.",
       impact: "IEEE Conference • Smart city prototype • International presentation",
       techStack: ["PHP", "Firebase", "MySQL", "HTML", "CSS", "JavaScript"],
       github: "https://github.com/vky6366/Intelligent-transportation-system-Website",
@@ -219,6 +232,7 @@ export default function Portfolio() {
     { id: "projects", label: "Projects" },
     { id: "research", label: "Research" },
     { id: "achievements", label: "Achievements" },
+    { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "resume", label: "Resume" },
     { id: "contact", label: "Contact" },
@@ -470,23 +484,40 @@ export default function Portfolio() {
             <Card className="bg-slate-900/50 border-slate-800/50 hover:border-blue-500/30 transition-all duration-500">
               <CardHeader className="pb-6">
                 <div className="flex items-start justify-between mb-4">
-                  <div>
+                  <div className="flex-1">
                     <CardTitle className="text-slate-100 text-2xl font-semibold mb-2">
                       Advanced DeepFake Detection Using Multi-Modal Analysis
                     </CardTitle>
                     <CardDescription className="text-blue-400 text-lg font-medium">
-                      Under Review • Cybersecurity Journal • First Author
+                      Preprint Published on Research Square · Under Review · First Author
                     </CardDescription>
                   </div>
+                  <a
+                    href="https://www.researchsquare.com/article/rs-7949701/v1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-4 px-4 py-2 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/30 hover:border-blue-500/50 rounded-lg transition-all duration-300 flex items-center gap-2 text-sm font-medium whitespace-nowrap"
+                  >
+                    View Preprint
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-300 mb-8 text-lg leading-relaxed">
-                  Developed a novel multi-modal approach combining facial landmark analysis, temporal inconsistency
-                  detection, and transformer-based architectures. The proposed method achieved state-of-the-art
-                  performance on benchmark datasets, significantly outperforming existing solutions while maintaining
-                  real-time inference capabilities.
+                  Developed a high-performance deepfake detection system using frame-level analysis and
+                  EfficientNet-based ensembles. The system combines robust preprocessing, facial alignment, and
+                  explainable AI techniques to achieve near real-time inference while maintaining strong generalization
+                  across benchmark datasets.
                 </p>
+                {/* Performance metrics unchanged */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                   <div className="bg-slate-800/50 p-6 rounded-xl text-center border border-slate-700/50">
                     <div className="text-3xl font-bold text-blue-400 mb-2">0.998</div>
@@ -548,6 +579,126 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Experience Section */}
+      <section id="experience" className="py-20 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-blue-400 font-medium text-lg mb-4 tracking-wide">Professional Journey</p>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
+              Work <span className="text-blue-400">Experience</span>
+            </h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+              Building production-grade AI systems and driving innovation in healthcare technology
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-slate-900/50 border-slate-800/50 hover:border-blue-500/30 transition-all duration-500 group">
+              <CardContent className="p-8">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Briefcase className="h-5 w-5 text-blue-400" />
+                      <h3 className="text-2xl font-semibold text-slate-100 group-hover:text-blue-400 transition-colors duration-300">
+                        AI Intern
+                      </h3>
+                    </div>
+                    <p className="text-xl font-medium text-blue-400 mb-2">AI Chef</p>
+                    <p className="text-slate-400 text-sm">Healthcare + LLM Startup</p>
+                  </div>
+                  <div className="mt-4 md:mt-0 md:text-right">
+                    <div className="flex items-center gap-2 text-slate-300 mb-2">
+                      <Calendar className="h-4 w-4 text-slate-500" />
+                      <span className="font-medium">Sept 2025 – Present</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-slate-400">
+                      <MapPin className="h-4 w-4 text-slate-500" />
+                      <span>Remote – Mumbai, India</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-4 mt-6">
+                  <div className="flex gap-3 items-start group/item hover:bg-slate-800/30 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-2 w-2 rounded-full bg-blue-400 mt-2 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
+                    <p className="text-slate-300 leading-relaxed">
+                      Built custom <span className="text-blue-400 font-medium">LLM retrieval modules</span> including
+                      hybrid BM25 + embedding search and query compression, enabling{" "}
+                      <span className="text-blue-400 font-medium">2× faster multi-LLM workflows</span>.
+                    </p>
+                  </div>
+
+                  <div className="flex gap-3 items-start group/item hover:bg-slate-800/30 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-2 w-2 rounded-full bg-blue-400 mt-2 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
+                    <p className="text-slate-300 leading-relaxed">
+                      Designed and deployed a{" "}
+                      <span className="text-blue-400 font-medium">production-grade FastAPI backend</span> with RAG
+                      endpoints, Bring-Your-Own-Key (BYOK) support, and vector databases (Qdrant).
+                    </p>
+                  </div>
+
+                  <div className="flex gap-3 items-start group/item hover:bg-slate-800/30 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-2 w-2 rounded-full bg-blue-400 mt-2 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
+                    <p className="text-slate-300 leading-relaxed">
+                      Containerized the full stack{" "}
+                      <span className="text-blue-400 font-medium">(FastAPI, MongoDB, Qdrant)</span> using Docker and
+                      iteratively improved healthcare recommendation quality using user interaction data.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-6 pt-6 border-t border-slate-800/50">
+                  <div className="flex flex-wrap gap-2">
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      LangChain
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      FastAPI
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      RAG
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      Qdrant
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      MongoDB
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      Docker
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      Python
+                    </Badge>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Skills Section */}
       <section id="skills" className="py-20 px-6 lg:px-8 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">
@@ -579,7 +730,7 @@ export default function Portfolio() {
       </section>
 
       {/* Resume Section */}
-      <section id="resume" className="py-20 px-6 lg:px-8">
+      <section id="resume" className="py-20 px-6 lg:px-8 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-blue-400 font-medium text-lg mb-4 tracking-wide">Professional Profile</p>
@@ -606,7 +757,7 @@ export default function Portfolio() {
                       className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-medium rounded-xl shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 transition-all duration-300"
                     >
                       <a
-                        href="https://drive.google.com/file/d/1cE1RoXhqY4xBY0KauJ8vKMlx7nIM_mKW/view?usp=sharing"
+                        href="https://drive.google.com/file/d/18zAC9UaoEW9KP8nKAemfMSQQHCXqH1IO/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
