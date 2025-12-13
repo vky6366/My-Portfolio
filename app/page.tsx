@@ -20,6 +20,8 @@ import {
   Briefcase,
   MapPin,
   Calendar,
+  Container,
+  Search,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -217,6 +219,11 @@ export default function Portfolio() {
     { name: "Scikit-Learn", icon: Brain },
     { name: "LangChain", icon: Brain },
     { name: "LangGraph", icon: Brain },
+    { name: "RAG", icon: Brain},
+    { name: "Prompt Engineering", icon: Code },
+    { name: "FAISS", icon: Database },
+    { name: "Qdrant", icon: Database },
+    { name: "Hybrid Search", icon: Search },
     { name: "TFLite", icon: Smartphone },
     { name: "OpenCV", icon: Code },
     { name: "FastAPI", icon: Server },
@@ -224,6 +231,7 @@ export default function Portfolio() {
     { name: "Hugging Face", icon: Brain },
     { name: "Firebase", icon: Database },
     { name: "MySQL", icon: Database },
+    { name: "Docker", icon: Container },
     { name: "GitHub", icon: Github },
   ]
 
