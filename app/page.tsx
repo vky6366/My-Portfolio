@@ -38,6 +38,7 @@ export default function Portfolio() {
         "projects",
         "other-projects",
         "research",
+        "certifications",
         "achievements",
         "experience",
         "skills",
@@ -219,7 +220,7 @@ export default function Portfolio() {
     { name: "Scikit-Learn", icon: Brain },
     { name: "LangChain", icon: Brain },
     { name: "LangGraph", icon: Brain },
-    { name: "RAG", icon: Brain},
+    { name: "RAG", icon: Brain },
     { name: "Prompt Engineering", icon: Code },
     { name: "FAISS", icon: Database },
     { name: "Qdrant", icon: Database },
@@ -238,7 +239,9 @@ export default function Portfolio() {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "projects", label: "Projects" },
+    { id: "other-projects", label: "Other Projects" },
     { id: "research", label: "Research" },
+    { id: "certifications", label: "Certifications" },
     { id: "achievements", label: "Achievements" },
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
@@ -542,6 +545,90 @@ export default function Portfolio() {
                   <div className="bg-slate-800/50 p-6 rounded-xl text-center border border-slate-700/50">
                     <div className="text-3xl font-bold text-orange-400 mb-2">5M+</div>
                     <div className="text-slate-400 font-medium">Samples</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section id="certifications" className="py-20 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-blue-400 font-medium text-lg mb-4 tracking-wide">Professional Credentials</p>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
+              <span className="text-blue-400">Certifications</span>
+            </h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+              Industry-recognized certifications validating expertise in cloud AI and machine learning
+            </p>
+          </div>
+          <div className="max-w-5xl mx-auto">
+            <Card className="bg-slate-900/50 border-slate-800/50 hover:border-blue-500/30 transition-all duration-500">
+              <CardHeader className="pb-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <CardTitle className="text-slate-100 text-2xl font-semibold mb-2">
+                      AWS Certified AI Practitioner
+                    </CardTitle>
+                    <CardDescription className="text-blue-400 text-lg font-medium">
+                      Amazon Web Services (AWS)
+                    </CardDescription>
+                  </div>
+                  <a
+                    href="https://www.credly.com/badges/725918d1-3cef-4c5c-a2fb-972e5afaafb5/public_url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-4 px-4 py-2 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/30 hover:border-blue-500/50 rounded-lg transition-all duration-300 flex items-center gap-2 text-sm font-medium whitespace-nowrap"
+                  >
+                    Show Credential
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50">
+                    <div className="text-slate-400 font-medium text-sm mb-2">Issued</div>
+                    <div className="text-slate-100 font-semibold">January 2026</div>
+                  </div>
+                  <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50">
+                    <div className="text-slate-400 font-medium text-sm mb-2">Expires</div>
+                    <div className="text-slate-100 font-semibold">January 2029</div>
+                  </div>
+                </div>
+                <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 mb-6">
+                  <div className="text-slate-400 font-medium text-sm mb-2">Credential ID</div>
+                  <div className="text-slate-100 font-mono text-sm break-all">725918d1-3cef-4c5c-a2fb-972e5afaafb5</div>
+                </div>
+                <div>
+                  <div className="text-slate-300 font-medium text-sm mb-3">Associated Skills</div>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Amazon Web Services (AWS)",
+                      "Amazon Bedrock",
+                      "AWS SageMaker",
+                      "Machine Learning",
+                      "Deep Learning",
+                      "Artificial Intelligence (AI)",
+                      "Reinforcement Learning",
+                    ].map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-1 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-300 text-sm font-medium"
+                      >
+                        {skill}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </CardContent>
