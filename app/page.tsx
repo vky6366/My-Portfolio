@@ -37,10 +37,10 @@ export default function Portfolio() {
         "home",
         "projects",
         "other-projects",
+        "experience",
         "research",
         "certifications",
         "achievements",
-        "experience",
         "skills",
         "resume",
         "contact",
@@ -75,7 +75,7 @@ export default function Portfolio() {
 
   const featuredProjects = [
     {
-      title: "Multi-Modal DeepFake Detection",
+      title: "Multi- Modal DeepFake Detection",
       description:
         "Advanced deepfake detection system using EfficientNet ensembles, audio spectrograms, and frame-based classification. First-authored research paper under review with state-of-the-art performance.",
       impact: "99.8% AUC • Multi-modal analysis • Research publication",
@@ -240,10 +240,10 @@ export default function Portfolio() {
     { id: "home", label: "Home" },
     { id: "projects", label: "Projects" },
     { id: "other-projects", label: "Other Projects" },
+    { id: "experience", label: "Experience" },
     { id: "research", label: "Research" },
     { id: "certifications", label: "Certifications" },
     { id: "achievements", label: "Achievements" },
-    { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "resume", label: "Resume" },
     { id: "contact", label: "Contact" },
@@ -479,6 +479,126 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Experience Section */}
+      <section id="experience" className="py-20 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-blue-400 font-medium text-lg mb-4 tracking-wide">Professional Journey</p>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
+              Work <span className="text-blue-400">Experience</span>
+            </h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+              Building production-grade AI systems and driving innovation in healthcare technology
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-slate-900/50 border-slate-800/50 hover:border-blue-500/30 transition-all duration-500 group">
+              <CardContent className="p-8">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Briefcase className="h-5 w-5 text-blue-400" />
+                      <h3 className="text-2xl font-semibold text-slate-100 group-hover:text-blue-400 transition-colors duration-300">
+                        AI Intern
+                      </h3>
+                    </div>
+                    <p className="text-xl font-medium text-blue-400 mb-2">AI Chef</p>
+                    <p className="text-slate-400 text-sm">Healthcare + LLM Startup</p>
+                  </div>
+                  <div className="mt-4 md:mt-0 md:text-right">
+                    <div className="flex items-center gap-2 text-slate-300 mb-2">
+                      <Calendar className="h-4 w-4 text-slate-500" />
+                      <span className="font-medium">Sept 2025 – Dec 2025</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-slate-400">
+                      <MapPin className="h-4 w-4 text-slate-500" />
+                      <span>Remote – Mumbai, India</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-4 mt-6">
+                  <div className="flex gap-3 items-start group/item hover:bg-slate-800/30 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-2 w-2 rounded-full bg-blue-400 mt-2 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
+                    <p className="text-slate-300 leading-relaxed">
+                      Built custom <span className="text-blue-400 font-medium">LLM retrieval modules</span> including
+                      hybrid BM25 + embedding search and query compression, enabling{" "}
+                      <span className="text-blue-400 font-medium">2× faster multi-LLM workflows</span>.
+                    </p>
+                  </div>
+
+                  <div className="flex gap-3 items-start group/item hover:bg-slate-800/30 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-2 w-2 rounded-full bg-blue-400 mt-2 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
+                    <p className="text-slate-300 leading-relaxed">
+                      Designed and deployed a{" "}
+                      <span className="text-blue-400 font-medium">production-grade FastAPI backend</span> with RAG
+                      endpoints, Bring-Your-Own-Key (BYOK) support, and vector databases (Qdrant).
+                    </p>
+                  </div>
+
+                  <div className="flex gap-3 items-start group/item hover:bg-slate-800/30 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-2 w-2 rounded-full bg-blue-400 mt-2 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
+                    <p className="text-slate-300 leading-relaxed">
+                      Containerized the full stack{" "}
+                      <span className="text-blue-400 font-medium">(FastAPI, MongoDB, Qdrant)</span> using Docker and
+                      iteratively improved healthcare recommendation quality using user interaction data.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-6 pt-6 border-t border-slate-800/50">
+                  <div className="flex flex-wrap gap-2">
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      LangChain
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      FastAPI
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      RAG
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      Qdrant
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      MongoDB
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      Docker
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
+                    >
+                      Python
+                    </Badge>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Research Section */}
       <section id="research" className="py-20 px-6 lg:px-8 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">
@@ -670,126 +790,6 @@ export default function Portfolio() {
                 </div>
               )
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Experience Section */}
-      <section id="experience" className="py-20 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-blue-400 font-medium text-lg mb-4 tracking-wide">Professional Journey</p>
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
-              Work <span className="text-blue-400">Experience</span>
-            </h2>
-            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-              Building production-grade AI systems and driving innovation in healthcare technology
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <Card className="bg-slate-900/50 border-slate-800/50 hover:border-blue-500/30 transition-all duration-500 group">
-              <CardContent className="p-8">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
-                  <div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Briefcase className="h-5 w-5 text-blue-400" />
-                      <h3 className="text-2xl font-semibold text-slate-100 group-hover:text-blue-400 transition-colors duration-300">
-                        AI Intern
-                      </h3>
-                    </div>
-                    <p className="text-xl font-medium text-blue-400 mb-2">AI Chef</p>
-                    <p className="text-slate-400 text-sm">Healthcare + LLM Startup</p>
-                  </div>
-                  <div className="mt-4 md:mt-0 md:text-right">
-                    <div className="flex items-center gap-2 text-slate-300 mb-2">
-                      <Calendar className="h-4 w-4 text-slate-500" />
-                      <span className="font-medium">Sept 2025 – Present</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-slate-400">
-                      <MapPin className="h-4 w-4 text-slate-500" />
-                      <span>Remote – Mumbai, India</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-4 mt-6">
-                  <div className="flex gap-3 items-start group/item hover:bg-slate-800/30 p-3 rounded-lg transition-all duration-300">
-                    <div className="h-2 w-2 rounded-full bg-blue-400 mt-2 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
-                    <p className="text-slate-300 leading-relaxed">
-                      Built custom <span className="text-blue-400 font-medium">LLM retrieval modules</span> including
-                      hybrid BM25 + embedding search and query compression, enabling{" "}
-                      <span className="text-blue-400 font-medium">2× faster multi-LLM workflows</span>.
-                    </p>
-                  </div>
-
-                  <div className="flex gap-3 items-start group/item hover:bg-slate-800/30 p-3 rounded-lg transition-all duration-300">
-                    <div className="h-2 w-2 rounded-full bg-blue-400 mt-2 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
-                    <p className="text-slate-300 leading-relaxed">
-                      Designed and deployed a{" "}
-                      <span className="text-blue-400 font-medium">production-grade FastAPI backend</span> with RAG
-                      endpoints, Bring-Your-Own-Key (BYOK) support, and vector databases (Qdrant).
-                    </p>
-                  </div>
-
-                  <div className="flex gap-3 items-start group/item hover:bg-slate-800/30 p-3 rounded-lg transition-all duration-300">
-                    <div className="h-2 w-2 rounded-full bg-blue-400 mt-2 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
-                    <p className="text-slate-300 leading-relaxed">
-                      Containerized the full stack{" "}
-                      <span className="text-blue-400 font-medium">(FastAPI, MongoDB, Qdrant)</span> using Docker and
-                      iteratively improved healthcare recommendation quality using user interaction data.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-6 pt-6 border-t border-slate-800/50">
-                  <div className="flex flex-wrap gap-2">
-                    <Badge
-                      variant="secondary"
-                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
-                    >
-                      LangChain
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
-                    >
-                      FastAPI
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
-                    >
-                      RAG
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
-                    >
-                      Qdrant
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
-                    >
-                      MongoDB
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
-                    >
-                      Docker
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20 transition-colors duration-300"
-                    >
-                      Python
-                    </Badge>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
