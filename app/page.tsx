@@ -852,7 +852,7 @@ export default function Portfolio() {
                       className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-medium rounded-xl shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 transition-all duration-300"
                     >
                       <a
-                        href="https://drive.google.com/file/d/18zAC9UaoEW9KP8nKAemfMSQQHCXqH1IO/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1eU77JFmZEtxho50GFDsHP9p3qK0sDihb/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -873,7 +873,7 @@ export default function Portfolio() {
                       className="border-slate-700 text-slate-300 hover:bg-slate-800 hover:border-slate-600 px-8 py-3 text-lg font-medium rounded-xl transition-all duration-300 bg-transparent"
                     >
                       <a
-                        href="https://drive.google.com/file/d/1cE1RoXhqY4xBY0KauJ8vKMlx7nIM_mKW/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1eU77JFmZEtxho50GFDsHP9p3qK0sDihb/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
