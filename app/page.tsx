@@ -233,6 +233,13 @@ export default function Portfolio() {
     { name: "Firebase", icon: Database },
     { name: "MySQL", icon: Database },
     { name: "Docker", icon: Container },
+    { name: "AWS", icon: Server },
+    { name: "AWS S3", icon: Server },
+    { name: "AWS ECS Fargate", icon: Container },
+    { name: "AWS RDS", icon: Database },
+    { name: "AWS EC2", icon: Server },
+    { name: "Amazon Bedrock", icon: Brain },
+    { name: "AWS SageMaker", icon: Brain },
     { name: "GitHub", icon: Github },
   ]
 
