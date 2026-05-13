@@ -93,9 +93,9 @@ export default function Portfolio() {
     {
       title: "AI Powered Medical Appointment Scheduling Agent",
       description:
-        "An intelligent, AI-powered agent designed to automate and optimize the scheduling of medical appointments. This project aims to streamline patient-doctor interactions, reduce manual administrative work, and improve the overall efficiency of medical appointment management.",
-      impact: "AI-Powered Scheduling • Natural Language Processing • Calendar Integration",
-      techStack: ["Python", "Langchain", "LangGraph", "Pydantic", "OpenAI API", "GPT 4o-mini"],
+        "Built an AI-powered medical appointment scheduling system with autonomous patient intake and intelligent slot management. Integrated React frontend hosted on AWS S3, Google OAuth authentication, PDF/email notifications, and deployed backend services using AWS ECS Fargate with AWS RDS.",
+      impact: "Autonomous patient intake • AWS cloud deployment • Full-stack system",
+      techStack: ["Python", "React", "LangChain", "LangGraph", "Pydantic", "OpenAI API", "AWS"],
       github: "https://github.com/vky6366/AI-Powered-Medical-Appointment-Scheduling-Agent",
     },
     {
@@ -142,18 +142,10 @@ export default function Portfolio() {
 
   const otherProjects = [
     {
-      title: "Agent-Based Medical Appointment Scheduling System",
-      description:
-        "Built an AI-powered medical appointment scheduling system with autonomous patient intake and intelligent slot management. Integrated React frontend hosted on AWS S3, Google OAuth authentication, PDF/email notifications, and deployed backend services using AWS ECS Fargate with AWS RDS.",
-      impact: "AI-powered scheduling • Full-stack deployment • Cloud infrastructure",
-      techStack: ["Python", "React", "LangChain", "LangGraph", "Pydantic", "OpenAI API", "AWS"],
-      github: "https://github.com/vky6366/",
-    },
-    {
       title: "Cricket Score Predictor",
       description:
         "Built XGBoost-based T20I and ODI score prediction models using match statistics and contextual features. Deployed real-time predictions on AWS EC2 using Streamlit with model serving and cloud instance management.",
-      impact: "Real-time predictions • Sports analytics • Cloud deployment",
+      impact: "ML-powered predictions • AWS EC2 deployment • Real-time inference",
       techStack: ["Python", "XGBoost", "scikit-learn", "Streamlit", "AWS EC2"],
       github: "https://github.com/vky6366/Cricket-Score-Predictor",
     },
