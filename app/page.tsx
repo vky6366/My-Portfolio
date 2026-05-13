@@ -142,11 +142,19 @@ export default function Portfolio() {
 
   const otherProjects = [
     {
+      title: "Agent-Based Medical Appointment Scheduling System",
+      description:
+        "Built an AI-powered medical appointment scheduling system with autonomous patient intake and intelligent slot management. Integrated React frontend hosted on AWS S3, Google OAuth authentication, PDF/email notifications, and deployed backend services using AWS ECS Fargate with AWS RDS.",
+      impact: "AI-powered scheduling • Full-stack deployment • Cloud infrastructure",
+      techStack: ["Python", "React", "LangChain", "LangGraph", "Pydantic", "OpenAI API", "AWS"],
+      github: "https://github.com/vky6366/",
+    },
+    {
       title: "Cricket Score Predictor",
       description:
-        "ML model predicting target cricket scores using match context, regression models, and comprehensive team performance statistics.",
-      impact: "Match prediction • Statistical analysis • Sports analytics",
-      techStack: ["Python", "Pandas", "XGBoost"],
+        "Built XGBoost-based T20I and ODI score prediction models using match statistics and contextual features. Deployed real-time predictions on AWS EC2 using Streamlit with model serving and cloud instance management.",
+      impact: "Real-time predictions • Sports analytics • Cloud deployment",
+      techStack: ["Python", "XGBoost", "scikit-learn", "Streamlit", "AWS EC2"],
       github: "https://github.com/vky6366/Cricket-Score-Predictor",
     },
     {
