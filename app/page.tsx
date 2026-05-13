@@ -93,9 +93,9 @@ export default function Portfolio() {
     {
       title: "AI Powered Medical Appointment Scheduling Agent",
       description:
-        "An intelligent, AI-powered agent designed to automate and optimize the scheduling of medical appointments. This project aims to streamline patient-doctor interactions, reduce manual administrative work, and improve the overall efficiency of medical appointment management.",
-      impact: "AI-Powered Scheduling • Natural Language Processing • Calendar Integration",
-      techStack: ["Python", "Langchain", "LangGraph", "Pydantic", "OpenAI API", "GPT 4o-mini"],
+        "Built an AI-powered medical appointment scheduling system with autonomous patient intake and intelligent slot management. Integrated React frontend hosted on AWS S3, Google OAuth authentication, PDF/email notifications, and deployed backend services using AWS ECS Fargate with AWS RDS.",
+      impact: "Autonomous patient intake • AWS cloud deployment • Full-stack system",
+      techStack: ["Python", "React", "LangChain", "LangGraph", "Pydantic", "OpenAI API", "AWS"],
       github: "https://github.com/vky6366/AI-Powered-Medical-Appointment-Scheduling-Agent",
     },
     {
@@ -144,9 +144,9 @@ export default function Portfolio() {
     {
       title: "Cricket Score Predictor",
       description:
-        "ML model predicting target cricket scores using match context, regression models, and comprehensive team performance statistics.",
-      impact: "Match prediction • Statistical analysis • Sports analytics",
-      techStack: ["Python", "Pandas", "XGBoost"],
+        "Built XGBoost-based T20I and ODI score prediction models using match statistics and contextual features. Deployed real-time predictions on AWS EC2 using Streamlit with model serving and cloud instance management.",
+      impact: "ML-powered predictions • AWS EC2 deployment • Real-time inference",
+      techStack: ["Python", "XGBoost", "scikit-learn", "Streamlit", "AWS EC2"],
       github: "https://github.com/vky6366/Cricket-Score-Predictor",
     },
     {
@@ -233,6 +233,13 @@ export default function Portfolio() {
     { name: "Firebase", icon: Database },
     { name: "MySQL", icon: Database },
     { name: "Docker", icon: Container },
+    { name: "AWS", icon: Server },
+    { name: "AWS S3", icon: Server },
+    { name: "AWS ECS Fargate", icon: Container },
+    { name: "AWS RDS", icon: Database },
+    { name: "AWS EC2", icon: Server },
+    { name: "Amazon Bedrock", icon: Brain },
+    { name: "AWS SageMaker", icon: Brain },
     { name: "GitHub", icon: Github },
   ]
 
@@ -753,6 +760,71 @@ export default function Portfolio() {
                 </div>
               </CardContent>
             </Card>
+            
+            <Card className="bg-slate-900/50 border-slate-800/50 hover:border-blue-500/30 transition-all duration-500 mt-8">
+              <CardHeader className="pb-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <CardTitle className="text-slate-100 text-2xl font-semibold mb-2">
+                      AWS Certified Solutions Architect – Associate (SAA-C03)
+                    </CardTitle>
+                    <CardDescription className="text-blue-400 text-lg font-medium">
+                      Amazon Web Services (AWS)
+                    </CardDescription>
+                  </div>
+                  <a
+                    href="https://www.credly.com/badges/b10eac39-8dc3-4abe-b31a-0bd873394ab5/public_url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-4 px-4 py-2 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/30 hover:border-blue-500/50 rounded-lg transition-all duration-300 flex items-center gap-2 text-sm font-medium whitespace-nowrap"
+                  >
+                    Show Credential
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50">
+                    <div className="text-slate-400 font-medium text-sm mb-2">Issued</div>
+                    <div className="text-slate-100 font-semibold">May 2026</div>
+                  </div>
+                  <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50">
+                    <div className="text-slate-400 font-medium text-sm mb-2">Expires</div>
+                    <div className="text-slate-100 font-semibold">May 2029</div>
+                  </div>
+                </div>
+                <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 mb-6">
+                  <div className="text-slate-400 font-medium text-sm mb-2">Credential ID</div>
+                  <div className="text-slate-100 font-mono text-sm break-all">b10eac39-8dc3-4abe-b31a-0bd873394ab5</div>
+                </div>
+                <div>
+                  <div className="text-slate-300 font-medium text-sm mb-3">Associated Skills</div>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Cloud Architecture",
+                      "Cloud Infrastructure",
+                      "AWS",
+                      "System Design"
+                    ].map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-1 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-300 text-sm font-medium"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -852,7 +924,7 @@ export default function Portfolio() {
                       className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-medium rounded-xl shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 transition-all duration-300"
                     >
                       <a
-                        href="https://drive.google.com/file/d/1eU77JFmZEtxho50GFDsHP9p3qK0sDihb/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1KiuP71tolXoFwbV4cl_N4ZF9FyMbMRyd/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -873,7 +945,7 @@ export default function Portfolio() {
                       className="border-slate-700 text-slate-300 hover:bg-slate-800 hover:border-slate-600 px-8 py-3 text-lg font-medium rounded-xl transition-all duration-300 bg-transparent"
                     >
                       <a
-                        href="https://drive.google.com/file/d/1eU77JFmZEtxho50GFDsHP9p3qK0sDihb/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1KiuP71tolXoFwbV4cl_N4ZF9FyMbMRyd/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
