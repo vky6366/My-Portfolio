@@ -895,8 +895,7 @@ export default function Portfolio() {
                   className="bg-slate-900/50 p-6 rounded-xl border border-slate-800/50 hover:border-blue-500/50 transition-all duration-300 hover:bg-slate-800/50 text-center group"
                 >
                   <IconComponent className="h-8 w-8 mx-auto mb-3 text-blue-400 group-hover:scale-110 transition-transform duration-300" />
-                  <p className="text-slate-200 font-medium mb-1">{skill.name}</p>
-                  <p className="text-slate-500 text-sm">{skill.level}</p>
+                  <p className="text-slate-200 font-medium">{skill.name}</p>
                 </div>
               )
             })}
