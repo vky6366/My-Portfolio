@@ -75,6 +75,14 @@ export default function Portfolio() {
 
   const featuredProjects = [
     {
+      title: "AI-Powered Cyber Defense Platform",
+      description:
+        "Multi-agent cybersecurity platform using LangGraph with Human-in-the-Loop approval workflows to ingest security logs, detect threats, enrich intelligence, and automate incident response. Deployed on AWS ECS Fargate behind an ALB with Amazon RDS PostgreSQL; containerized with Docker; built FastAPI services with LangGraph checkpoint recovery, audit logging, and artifact tracking. Custom MCP server integrating MITRE ATT&CK, AbuseIPDB, NVD CVE, and ChromaDB for threat enrichment, risk scoring, and IoC correlation.",
+      impact: "LangGraph orchestration • Human-in-the-Loop workflows • AWS cloud deployment",
+      techStack: ["Python", "LangGraph", "FastAPI", "Docker", "AWS ECS Fargate", "PostgreSQL", "ChromaDB", "MITRE ATT&CK"],
+      github: "https://github.com/vky6366/AI-Cyber-Defense-Platform",
+    },
+    {
       title: "Multi- Modal DeepFake Detection",
       description:
         "Advanced deepfake detection system using EfficientNet ensembles, audio spectrograms, and frame-based classification. First-authored research paper under review with state-of-the-art performance.",
