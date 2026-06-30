@@ -75,6 +75,14 @@ export default function Portfolio() {
 
   const featuredProjects = [
     {
+      title: "AI-Powered Cyber Defense Platform",
+      description:
+        "Multi-agent cybersecurity platform using LangGraph with Human-in-the-Loop approval workflows to ingest security logs, detect threats, enrich intelligence, and automate incident response. Deployed on AWS ECS Fargate behind an ALB with Amazon RDS PostgreSQL; containerized with Docker; built FastAPI services with LangGraph checkpoint recovery, audit logging, and artifact tracking. Custom MCP server integrating MITRE ATT&CK, AbuseIPDB, NVD CVE, and ChromaDB for threat enrichment, risk scoring, and IoC correlation.",
+      impact: "LangGraph orchestration • Human-in-the-Loop workflows • AWS cloud deployment",
+      techStack: ["Python", "LangGraph", "FastAPI", "Docker", "AWS ECS Fargate", "PostgreSQL", "ChromaDB", "MITRE ATT&CK"],
+      github: "https://github.com/vky6366/AI-Cyber-Defense-Platform",
+    },
+    {
       title: "Multi- Modal DeepFake Detection",
       description:
         "Advanced deepfake detection system using EfficientNet ensembles, audio spectrograms, and frame-based classification. First-authored research paper under review with state-of-the-art performance.",
@@ -887,8 +895,7 @@ export default function Portfolio() {
                   className="bg-slate-900/50 p-6 rounded-xl border border-slate-800/50 hover:border-blue-500/50 transition-all duration-300 hover:bg-slate-800/50 text-center group"
                 >
                   <IconComponent className="h-8 w-8 mx-auto mb-3 text-blue-400 group-hover:scale-110 transition-transform duration-300" />
-                  <p className="text-slate-200 font-medium mb-1">{skill.name}</p>
-                  <p className="text-slate-500 text-sm">{skill.level}</p>
+                  <p className="text-slate-200 font-medium">{skill.name}</p>
                 </div>
               )
             })}
@@ -924,7 +931,7 @@ export default function Portfolio() {
                       className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-medium rounded-xl shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 transition-all duration-300"
                     >
                       <a
-                        href="https://drive.google.com/file/d/1KiuP71tolXoFwbV4cl_N4ZF9FyMbMRyd/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1bMmOjsetRcu2URth1IvAh0t9DcZnbWs2/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -945,7 +952,7 @@ export default function Portfolio() {
                       className="border-slate-700 text-slate-300 hover:bg-slate-800 hover:border-slate-600 px-8 py-3 text-lg font-medium rounded-xl transition-all duration-300 bg-transparent"
                     >
                       <a
-                        href="https://drive.google.com/file/d/1KiuP71tolXoFwbV4cl_N4ZF9FyMbMRyd/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1bMmOjsetRcu2URth1IvAh0t9DcZnbWs2/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
