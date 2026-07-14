@@ -77,10 +77,18 @@ export default function Portfolio() {
     {
       title: "AI-Powered Cyber Defense Platform",
       description:
-        "Multi-agent cybersecurity platform using LangGraph with Human-in-the-Loop approval workflows to ingest security logs, detect threats, enrich intelligence, and automate incident response. Deployed on AWS ECS Fargate behind an ALB with Amazon RDS PostgreSQL; containerized with Docker; built FastAPI services with LangGraph checkpoint recovery, audit logging, and artifact tracking. Custom MCP server integrating MITRE ATT&CK, AbuseIPDB, NVD CVE, and ChromaDB for threat enrichment, risk scoring, and IoC correlation.",
+        "Engineered an AI-driven SOC platform with LangGraph, FastAPI, and Human-in-the-Loop workflows. Features a custom MCP server for threat enrichment (MITRE ATT&CK, NVD) and is deployed on a highly-available, cloud-native AWS backend (ECS Fargate, RDS) supporting zero-downtime deployments.",
       impact: "LangGraph orchestration • Human-in-the-Loop workflows • AWS cloud deployment",
       techStack: ["Python", "LangGraph", "FastAPI", "Docker", "AWS ECS Fargate", "PostgreSQL", "ChromaDB", "MITRE ATT&CK"],
       github: "https://github.com/vky6366/AI-Cyber-Defense-Platform",
+    },
+    {
+      title: "AI-Powered Operations Management Platform",
+      description:
+        "Built a modern internal operations platform for eyewear manufacturing with an embedded XGBoost model for predictive SLA monitoring. Integrated OpenAI for context-aware executive briefings and automated SMTP risk alerts, supported by a responsive React frontend and a high-performance FastAPI backend.",
+      impact: "Predictive SLA monitoring • GenAI executive briefings • Automated risk triage",
+      techStack: ["React", "FastAPI", "XGBoost", "OpenAI API", "PostgreSQL", "Tailwind CSS"],
+      github: "https://github.com/vky6366/ELUNO_Assignment",
     },
     {
       title: "Multi- Modal DeepFake Detection",
@@ -265,9 +273,30 @@ export default function Portfolio() {
   ]
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 selection:bg-blue-500/20">
+    <div className="min-h-screen bg-background text-foreground relative selection:bg-indigo-500/20 overflow-x-hidden">
+      {/* Dynamic Background */}
+      <div className="absolute top-0 left-0 right-0 h-[1000px] -z-10 overflow-hidden pointer-events-none">
+        {/* Dot pattern */}
+        <svg className="absolute inset-0 h-full w-full text-slate-300 opacity-[0.05]" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dot-pattern" width="32" height="32" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.5" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dot-pattern)" />
+        </svg>
+
+        {/* Glowing Orbs */}
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[500px] rounded-full bg-indigo-600/20 blur-[120px] animate-pulse duration-1000"></div>
+        <div className="absolute top-[20%] right-[-10%] w-[40%] h-[400px] rounded-full bg-purple-600/20 blur-[120px] animate-pulse duration-1000" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute top-[60%] left-[20%] w-[60%] h-[500px] rounded-full bg-pink-600/10 blur-[120px] animate-pulse duration-1000" style={{ animationDelay: "4s" }}></div>
+        
+        {/* Fade to background color at the bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-background to-transparent"></div>
+      </div>
+      
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 z-50">
+      <nav className="fixed top-0 w-full glass z-50 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="text-2xl font-semibold tracking-tight">
@@ -333,24 +362,20 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center justify-center">
             <div className="flex-1 text-center lg:text-left max-w-3xl">
-              <div className="mb-6">
-                <p className="text-blue-400 font-medium text-lg mb-2 tracking-wide">Computer Science Engineering</p>
+              <div className="mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-                  <span className="text-slate-100">Vishwakalyan</span>
+                  <span className="text-foreground">Vishwakalyan</span>
                   <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-purple-600">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500">
                     Patil
                   </span>
                 </h1>
               </div>
               <p className="text-xl sm:text-2xl text-slate-300 mb-8 font-light leading-relaxed">
-                Machine Learning & Deep Learning Explorer | LLM & RAG Builder | Python Developer | Final Year CSE
-                Undergrad
+                AI/ML Engineer | LLMs, RAG & Multi-Agent Systems | Cloud-Native Backend Developer | 2x AWS Certified
               </p>
               <p className="text-lg text-slate-400 mb-10 max-w-2xl leading-relaxed">
-                Currently working on LangChain Agents & RAG Systems, TFLite Edge Deployments, and first-authoring a
-                research paper on Multi-Modal Deepfake Detection. Exploring Multi-Modal Learning, MLOps, and System
-                Design.
+                Specializing in building robust LLM applications, RAG pipelines, and intelligent multi-agent systems with cloud-native backends. Experienced with prompt engineering, NLP, and fine-tuning workflows, alongside an ongoing focus on MLOps and System Design. Actively seeking opportunities in Machine Learning Engineering or Generative AI.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button
@@ -388,7 +413,7 @@ export default function Portfolio() {
             {featuredProjects.map((project, index) => (
               <Card
                 key={index}
-                className="bg-slate-900/50 border-slate-800/50 hover:border-blue-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 group"
+                className="bg-slate-900/40 backdrop-blur-sm border-slate-800 hover:border-indigo-500/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/20 group"
               >
                 <CardHeader className="pb-4">
                   <div className="flex items-start justify-between">
@@ -1027,7 +1052,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-center md:text-left mb-6 md:mb-0">
-              <p className="text-slate-400 text-lg">© 2024 Vishwakalyan Patil</p>
+              <p className="text-slate-400 text-lg">© 2026 Vishwakalyan Patil</p>
               <p className="text-slate-500 text-sm mt-1">Crafted with precision and passion</p>
             </div>
             <div className="flex space-x-6">
