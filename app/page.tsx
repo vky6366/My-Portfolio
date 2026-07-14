@@ -273,7 +273,7 @@ export default function Portfolio() {
   ]
 
   return (
-    <div className="min-h-screen bg-background text-foreground relative selection:bg-indigo-500/20 overflow-x-hidden">
+    <div className="min-h-screen bg-slate-950 text-slate-100 relative selection:bg-blue-500/20 overflow-x-hidden">
       {/* Dynamic Background */}
       <div className="absolute top-0 left-0 right-0 h-[1000px] -z-10 overflow-hidden pointer-events-none">
         {/* Dot pattern */}
@@ -292,11 +292,11 @@ export default function Portfolio() {
         <div className="absolute top-[60%] left-[20%] w-[60%] h-[500px] rounded-full bg-pink-600/10 blur-[120px] animate-pulse duration-1000" style={{ animationDelay: "4s" }}></div>
         
         {/* Fade to background color at the bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-background to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-slate-950 to-transparent"></div>
       </div>
       
       {/* Navigation */}
-      <nav className="fixed top-0 w-full glass z-50 transition-all duration-300">
+      <nav className="fixed top-0 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 z-50 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="text-2xl font-semibold tracking-tight">
@@ -364,7 +364,7 @@ export default function Portfolio() {
             <div className="flex-1 text-center lg:text-left max-w-3xl">
               <div className="mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-                  <span className="text-foreground">Vishwakalyan</span>
+                  <span className="text-slate-100">Vishwakalyan</span>
                   <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500">
                     Patil
