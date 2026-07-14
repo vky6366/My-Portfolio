@@ -364,7 +364,7 @@ export default function Portfolio() {
             <div className="flex-1 text-center lg:text-left max-w-3xl">
               <div className="mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-                  <span className="text-foreground">Vishwakalyan</span>
+                  <span className="text-slate-100">Vishwakalyan</span>
                   <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500">
                     Patil
